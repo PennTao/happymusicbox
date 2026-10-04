@@ -19,7 +19,7 @@ DRAFT = True
 
 BIZ = {
     "name": "Happy Music Box",
-    "email": "support@happymusicbox.com",  # [ASK] from Shuai's mockup; happymusicbox.com does not resolve yet
+    "email": "cloudntree.support@gmail.com",  # updated Oct 4, 2026 per Yeqiao
     "amazon_pink": "https://www.amazon.com/dp/B0HC9TPS27",
     "amazon_blue": "https://www.amazon.com/dp/B0HC9XZ8BC",
 }
@@ -43,13 +43,13 @@ IMAGES = {
              "A hand holding the palm-sized cube, showing its soft silicone grid and the buttons on top"),
     "box": ("amz_4_41B998PrnfL.jpg", (0, 90, 500, 500), False, (500,),
             "What's in the box: the Happy Music Box speaker, its gift box, the manual and a USB cable"),
-    "use_sleep": ("amz_1_51sZTOBUmcL.jpg", (10, 5, 140, 135), False, (260,),
+    "use_sleep": ("use_sleep.jpg", None, False, (500, 260),
                   "A woman asleep in bed with the cube glowing softly on the nightstand"),
-    "use_meditate": ("amz_1_51sZTOBUmcL.jpg", (372, 8, 494, 130), False, (260,),
+    "use_meditate": ("use_meditate.jpg", None, False, (500, 260),
                      "A woman meditating cross-legged on a yoga mat"),
-    "use_focus": ("amz_1_51sZTOBUmcL.jpg", (70, 160, 225, 315), False, (260,),
+    "use_focus": ("use_focus.jpg", None, False, (500, 260),
                   "Someone at a desk in the evening, holding the glowing cube"),
-    "use_gift": ("amz_1_51sZTOBUmcL.jpg", (35, 338, 192, 495), False, (260,),
+    "use_gift": ("use_gift.jpg", None, False, (214,),
                  "Two people handing over a wrapped gift box"),
 }
 
@@ -288,7 +288,7 @@ def features():
 
 
 def voices():
-    # Only real reviews here. As of Oct 3, 2026 the Amazon listing has one (5★, Sept 7, 2026).
+    # Only real reviews here. As of Oct 4, 2026 the Amazon listing has two 5★ reviews (Sept 7, Oct 3).
     return f"""<section class="voices">
   <div class="reviews">
     <h2 class="script">What our users are saying</h2>
@@ -298,13 +298,14 @@ def voices():
         <blockquote>“Super easy to use, and the audio is so calming. Really great product—even our cats are fans!”</blockquote>
         <small>Verified purchase on Amazon</small>
       </figure>
-      {ext(BUY + "#customerReviews", "Read reviews on Amazon " + ICON["arrow"], "review review-more")}
+      <figure class="review">
+        <figcaption><span class="avatar" aria-hidden="true">H</span><span><b>HankY</b>{STARS}</span></figcaption>
+        <blockquote>“The natural audio track sound is relaxing. Would recommend to anyone who likes/wants soothing sounds. Color changing is nice. When light is off still looks sleek.”</blockquote>
+        <small>Verified purchase on Amazon</small>
+      </figure>
     </div>
   </div>
-  <div class="glow" role="img" aria-label="Animation of the cube's LED colors cycling">
-    <div class="glow-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <span class="glow-tag">7 LED light modes</span>
-  </div>
+  {ext(BUY + "#customerReviews", "Read reviews on Amazon " + ICON["arrow"], "review review-more")}
 </section>"""
 
 
@@ -388,9 +389,9 @@ def faq():
 
 def footer():
     return f"""<footer class="foot">
-  <p>© 2026 Happy Music Box. Contact: <a href="mailto:{BIZ["email"]}">{BIZ["email"]}</a> ·
-     <a href="mailto:{BIZ["email"]}?subject=Partnership">Contact for Partnership</a></p>
-  <p class="legal">Happy Music Box is an independent wellness brand. Amazon and the Amazon logo are trademarks of Amazon.com, Inc.</p>
+  <p>Happy Music Box is a brand new bluetooth speaker launched by Cloud&amp;Tree on Amazon. Contact: <a href="mailto:{BIZ["email"]}">{BIZ["email"]}</a> for support and inquiries.</p>
+
+  <p class="legal">Amazon and the Amazon logo are trademarks of Amazon.com, Inc.</p>
 </footer>"""
 
 

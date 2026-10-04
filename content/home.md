@@ -18,10 +18,11 @@ A 3x3" geometric sound companion loaded with 432Hz, 528Hz, and 639Hz solace freq
 - **Soft-Touch Design:** Soft silicone casing with a modern grid pattern that fits seamlessly into any room setup.
 
 ## What our users are saying
-Real Amazon reviews only. As of Oct 3, 2026 there is one:
+Real Amazon reviews only. As of Oct 4, 2026 there are two:
 > "Super easy to use, and the audio is so calming. Really great product—even our cats are fans!" (Y.Z., 5★, verified purchase, Sept 7, 2026)
+> "The natural audio track sound is relaxing. Would recommend to anyone who likes/wants soothing sounds. Color changing is nice. When light is off still looks sleek." (HankY, 5★, verified purchase, Pink, Oct 3, 2026)
 [Read reviews on Amazon →]
-Beside it: an animated color panel labelled "7 LED light modes" (stand-in for the mockup's GIF) [ASK: real clip of the lights?]
+Beside them: a "Read reviews on Amazon" card.
 
 ## Solace Frequencies (#frequencies), labels from Shuai's Amazon graphic
 Preloaded with 432Hz, 528Hz and 639Hz frequency tracks for meditation, mindfulness, and creating a calming atmosphere.
@@ -48,7 +49,7 @@ Choose from 7 LED colors and multiple dynamic light modes to match your mood, yo
 | Battery | 1600mAh, up to 4 hours of playback |
 | Finish | Soft-touch silicone with a 3×3 textured grid |
 | Colors | Pink, Blue |
-[Shop Pink] [Shop Blue] · Questions? Email support@happymusicbox.com [ASK]
+[Shop Pink] [Shop Blue] · Questions? Email cloudntree.support@gmail.com
 
 ## FAQ (#faq)
 - **Do I need my phone to use it?** No. The 432Hz, 528Hz and 639Hz tracks are built in, so you can tap to play straight away. Your phone is only needed if you want to stream your own music over Bluetooth.
@@ -56,8 +57,8 @@ Choose from 7 LED colors and multiple dynamic light modes to match your mood, yo
 - **Can I connect two of them?** Yes. Two Happy Music Box speakers can be paired together for a wider, more immersive stereo sound.
 - **How big is it?** 3 × 3 × 3 inches and 12.8 oz, small enough for a nightstand, a desk, or your bag.
 - **What colors does it come in?** Pink and Blue. Both are sold on Amazon.
-- **Where do I go for returns or a replacement?** If you bought on Amazon, start a return or replacement from your Amazon order. For anything else, email us at support@happymusicbox.com.
+- **Where do I go for returns or a replacement?** If you bought on Amazon, start a return or replacement from your Amazon order. For anything else, email us at cloudntree.support@gmail.com.
 
 ## Footer
-© 2026 Happy Music Box. Contact: support@happymusicbox.com · Contact for Partnership
-Happy Music Box is an independent wellness brand. Amazon and the Amazon logo are trademarks of Amazon.com, Inc.
+Happy Music Box is a brand new bluetooth speaker launched by Cloud&Tree on Amazon. Contact: cloudntree.support@gmail.com for support and inquiries.
+Amazon and the Amazon logo are trademarks of Amazon.com, Inc.

@@ -148,7 +148,7 @@ svg { stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; 
   text-transform: uppercase; color: var(--terracotta); margin: 0 0 12px; letter-spacing: .01em;
   transform: skew(-6deg);
 }
-.cards { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .review {
   margin: 0; padding: 12px 14px; background: #fff; border-radius: 12px; box-shadow: var(--shadow);
   font-size: 13.5px; display: flex; flex-direction: column; gap: 6px;

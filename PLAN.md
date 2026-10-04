@@ -13,7 +13,7 @@ One fast page that explains the product and sends people to the Amazon listing. 
 - `python3 build.py`. Needs Pillow. Wipes and rebuilds `site/`. Copy lives in `build.py`, mirrored in `content/home.md`.
 - Preview: `.claude/launch.json` → `happymusicbox` on port 8766.
 - `BASE_URL` env var: unset = no canonical, og:url, sitemap or robots. Set it once the domain is known.
-- Images: product shots are padded to a square and their white edges fade into the page (CSS mask), because a hard cut-out left a halo. Lifestyle tiles are crops of the listing collage (500 px source, so they stay small).
+- Images: product shots are padded to a square and their white edges fade into the page (CSS mask), because a hard cut-out left a halo. Lifestyle tiles are standalone photos served at 500 px wide (gift at 214 px native, source-limited).
 
 ## 4. Deliberate departures from the mockup
 - **Hero photo:** the mockup's cube is a render that doesn't match the real product. The site uses the real listing photo.
