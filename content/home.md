@@ -31,6 +31,8 @@ Chip: No phone needed: tap to relax instantly
 - **528 Hz:** Love & Miracles · Healing & harmony
 - **639 Hz:** Connection · Relationships & unity
 **Relax, focus & sleep:** Sleep · Meditate · Focus · Gift (photo tiles)
+**Usage video:** product usage-scenario clip below the tiles (video/advideo1.mp4).
+
 
 ## LED Light Modes (#light)
 Choose from 7 LED colors and multiple dynamic light modes to match your mood, your décor or the moment. Soft color glows through the cube's grid while your music or frequency track plays.

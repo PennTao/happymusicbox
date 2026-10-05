@@ -328,6 +328,8 @@ def frequencies():
   <h3 class="sub">Relax, focus &amp; sleep</h3>
   <div class="uses">{uses}
   </div>
+  <div class="usevideo"><video controls preload="metadata" playsinline src="video/advideo1.mp4"></video></div>
+
 </section>"""
 
 

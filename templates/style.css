@@ -218,6 +218,10 @@ svg { stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; 
 .uses figure { margin: 0; text-align: center; }
 .uses img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; }
 .uses figcaption { margin-top: 6px; font-weight: 500; color: var(--rust); }
+.usevideo { margin-top: 18px; }
+.usevideo video { width: 100%; height: auto; display: block; border-radius: 14px; background: #000; }
+
+
 
 .zig { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
 .zig + .zig { margin-top: 20px; }
