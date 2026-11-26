@@ -26,7 +26,7 @@ One fast page that explains the product and sends people to the Amazon listing. 
 1. **Domain and email:** contact email is now cloudntree.support@gmail.com (updated Oct 4). happymusicbox.com doesn't resolve (checked Oct 3). Does Shuai own it?
 2. **Hosting:** a GitHub Pages repo, as with uracquet?
 3. **Claims:** "Therapy" (headline), "promote deep sleep" (features) and "Healing" (528 Hz label) are Shuai's own words, used as written. Should she soften them for a wellness product? The Amazon text says relaxation and meditation.
-4. **Reviews:** HankY 5★ review (Oct 3, Pink) added Oct 4 from the user's screenshot. Still open: OK to quote the Y.Z. review? Leave it off if the reviewer is a friend or family member.
+4. **Reviews:** five real 5★ reviews live on the page (Nov 20, 2026 batch: Qu Yuanjie, Beer, L.J., HankY, Y.Z.). User supplied all five texts, so the Y.Z. quoting question is settled — keep it.
 5. **Media:** higher-resolution photos, a lifestyle hero shot, or a real clip of the light modes would all help. Listing images max out at 500 to 993 px.
 
 ## 6. GitHub Pages: Oct 3, 2026

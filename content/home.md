@@ -18,11 +18,14 @@ A 3x3" geometric sound companion loaded with 432Hz, 528Hz, and 639Hz solace freq
 - **Soft-Touch Design:** Soft silicone casing with a modern grid pattern that fits seamlessly into any room setup.
 
 ## What our users are saying
-Real Amazon reviews only. As of Oct 4, 2026 there are two:
-> "Super easy to use, and the audio is so calming. Really great product—even our cats are fans!" (Y.Z., 5★, verified purchase, Sept 7, 2026)
+Real Amazon reviews only. As of Nov 20, 2026 there are five, all 5★, newest first:
+> "Combination of lighting and sound tracks makes a big difference in how my room feels! ... it works as a great everyday speaker." (Qu Yuanjie, 5★, verified purchase, Blue, Nov 20, 2026)
+> "Pretty interesting design. The color makes it look like a cute toy, while producing some nice sound." (Beer, 5★, verified purchase, Pink, Oct 25, 2026)
+> "For something this small, the sound is impressive: clear and full, with plenty of volume for a room. ... The 7 LED color modes are a great touch." (L.J., 5★, verified purchase, Pink, Oct 7, 2026 — card shows excerpts, full text on Amazon)
 > "The natural audio track sound is relaxing. Would recommend to anyone who likes/wants soothing sounds. Color changing is nice. When light is off still looks sleek." (HankY, 5★, verified purchase, Pink, Oct 3, 2026)
+> "Super easy to use, and the audio is so calming. Really great product—even our cats are fans!" (Y.Z., 5★, verified purchase, Pink, Sept 7, 2026)
 [Read reviews on Amazon →]
-Beside them: a "Read reviews on Amazon" card.
+The five cards swipe horizontally in a scroll-snap track; the 6th slide is the "Read reviews on Amazon" card. ‹ › buttons scroll the track on desktop.
 
 ## Solace Frequencies (#frequencies), labels from Shuai's Amazon graphic
 Preloaded with 432Hz, 528Hz and 639Hz frequency tracks for meditation, mindfulness, and creating a calming atmosphere.

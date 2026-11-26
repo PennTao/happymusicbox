@@ -245,6 +245,45 @@ def schema():
         "image": [f"{BASE_URL}/img/cube-1000.webp" if BASE_URL else "img/cube-1000.webp"],
         "color": ["Pink", "Blue"],
         "weight": {"@type": "QuantitativeValue", "value": 12.8, "unitCode": "ONZ"},
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5",
+                            "reviewCount": "5", "bestRating": "5"},
+        "review": [
+            {"@type": "Review", "author": {"@type": "Person", "name": "Qu Yuanjie"},
+             "datePublished": "2026-11-20",
+             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+             "name": "Love it! Highly recommend",
+             "reviewBody": "Combination of lighting and sound tracks makes a big difference in how my room feels! "
+                           "It's compact enough to keep on a desk or side table. At the end of the day, I like "
+                           "putting on background sound and it works as a great everyday speaker. Another detail "
+                           "I like is the smooth soft surface, which is just as described."},
+            {"@type": "Review", "author": {"@type": "Person", "name": "Beer"},
+             "datePublished": "2026-10-25",
+             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+             "name": "Cute design",
+             "reviewBody": "Pretty interesting design. The color makes it look like a cute toy, while producing "
+                           "some nice sound. It's also compatible and portable for convenience."},
+            {"@type": "Review", "author": {"@type": "Person", "name": "L.J."},
+             "datePublished": "2026-10-07",
+             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+             "name": "Tiny cube, great sound, and a fun light show",
+             "reviewBody": "I'm really happy with this little speaker. At about 3 inches square and 12 oz, it fits "
+                           "in the palm of my hand. For something this small, the sound is impressive: clear and "
+                           "full, with plenty of volume for a room. Bluetooth pairing was quick. I enjoyed the "
+                           "preloaded relaxation tracks and used them for my meditation. The 7 LED color modes are "
+                           "a great touch. It also comes in a nice box, so it would make a good gift."},
+            {"@type": "Review", "author": {"@type": "Person", "name": "HankY"},
+             "datePublished": "2026-10-03",
+             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+             "name": "Awesome little speaker",
+             "reviewBody": "The natural audio track sound is relaxing. Would recommend to anyone who likes/wants "
+                           "soothing sounds. Color changing is nice. When light is off still looks sleek."},
+            {"@type": "Review", "author": {"@type": "Person", "name": "Y.Z."},
+             "datePublished": "2026-09-07",
+             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+             "name": "Really great product and very calming",
+             "reviewBody": "Super easy to use, and the audio is so calming. Really great product—even our cats "
+                           "are fans!"},
+        ],
     }
     faq = {
         "@context": "https://schema.org", "@type": "FAQPage",
@@ -288,25 +327,64 @@ def features():
 
 
 def voices():
-    # Only real reviews here. As of Oct 4, 2026 the Amazon listing has two 5★ reviews (Sept 7, Oct 3).
+    # Only real reviews here. As of Nov 20, 2026 the Amazon listing has five 5★ reviews,
+    # newest first. L.J.'s card shows verbatim excerpts (marked …); the full text lives
+    # on Amazon. The track swipes horizontally; the 6th slide links out to Amazon reviews.
     return f"""<section class="voices">
-  <div class="reviews">
+  <div class="voices-head">
     <h2 class="script">What our users are saying</h2>
-    <div class="cards">
+    <div class="car-btns" aria-hidden="false">
+      <button class="car-btn" id="revPrev" type="button" aria-label="Previous reviews">‹</button>
+      <button class="car-btn" id="revNext" type="button" aria-label="Next reviews">›</button>
+    </div>
+  </div>
+  <div class="cards" id="revTrack" tabindex="0" aria-label="Customer reviews, swipe or scroll horizontally">
       <figure class="review">
-        <figcaption><span class="avatar" aria-hidden="true">YZ</span><span><b>Y.Z.</b>{STARS}</span></figcaption>
-        <blockquote>“Super easy to use, and the audio is so calming. Really great product—even our cats are fans!”</blockquote>
-        <small>Verified purchase on Amazon</small>
+        <figcaption><span class="avatar" aria-hidden="true">Q</span><span><b>Qu Yuanjie</b>{STARS}</span></figcaption>
+        <blockquote>“Combination of lighting and sound tracks makes a big difference in how my room feels! It’s compact enough to keep on a desk or side table. At the end of the day, I like putting on background sound and it works as a great everyday speaker. Another detail I like is the smooth soft surface, which is just as described.”</blockquote>
+        <small>Verified purchase on Amazon · Blue · Nov 20, 2026</small>
+      </figure>
+      <figure class="review">
+        <figcaption><span class="avatar" aria-hidden="true">B</span><span><b>Beer</b>{STARS}</span></figcaption>
+        <blockquote>“Pretty interesting design. The color makes it look like a cute toy, while producing some nice sound. It’s also compatible and portable for convenience.”</blockquote>
+        <small>Verified purchase on Amazon · Pink · Oct 25, 2026</small>
+      </figure>
+      <figure class="review">
+        <figcaption><span class="avatar" aria-hidden="true">LJ</span><span><b>L.J.</b>{STARS}</span></figcaption>
+        <blockquote>“For something this small, the sound is impressive: clear and full, with plenty of volume for a room. Bluetooth pairing was quick … It’s nice to just press a button and have calming music playing without needing my phone. The 7 LED color modes are a great touch.”</blockquote>
+        <small>Verified purchase on Amazon · Pink · Oct 7, 2026</small>
       </figure>
       <figure class="review">
         <figcaption><span class="avatar" aria-hidden="true">H</span><span><b>HankY</b>{STARS}</span></figcaption>
         <blockquote>“The natural audio track sound is relaxing. Would recommend to anyone who likes/wants soothing sounds. Color changing is nice. When light is off still looks sleek.”</blockquote>
-        <small>Verified purchase on Amazon</small>
+        <small>Verified purchase on Amazon · Pink · Oct 3, 2026</small>
       </figure>
-    </div>
+      <figure class="review">
+        <figcaption><span class="avatar" aria-hidden="true">YZ</span><span><b>Y.Z.</b>{STARS}</span></figcaption>
+        <blockquote>“Super easy to use, and the audio is so calming. Really great product—even our cats are fans!”</blockquote>
+        <small>Verified purchase on Amazon · Pink · Sept 7, 2026</small>
+      </figure>
+    {ext(BUY + "#customerReviews", "Read reviews on Amazon " + ICON["arrow"], "review review-more")}
   </div>
-  {ext(BUY + "#customerReviews", "Read reviews on Amazon " + ICON["arrow"], "review review-more")}
 </section>"""
+
+
+def carousel_js():
+    return """<script>
+(function () {
+  var t = document.getElementById('revTrack');
+  var p = document.getElementById('revPrev');
+  var n = document.getElementById('revNext');
+  if (!t || !p || !n) return;
+  function step(d) {
+    var card = t.querySelector('.review');
+    var gap = parseFloat(getComputedStyle(t).gap) || 0;
+    t.scrollBy({ left: d * (card.offsetWidth + gap), behavior: 'smooth' });
+  }
+  p.addEventListener('click', function () { step(-1); });
+  n.addEventListener('click', function () { step(1); });
+})();
+</script>"""
 
 
 def frequencies():
@@ -401,7 +479,7 @@ def page():
     return "\n".join([
         head(), "<body>", '<div class="sheet">', header(), "<main>",
         hero(), features(), voices(), frequencies(), light(), support(), faq(),
-        "</main>", footer(), "</div>", "</body></html>",
+        "</main>", footer(), "</div>", carousel_js(), "</body></html>",
     ])
 
 
